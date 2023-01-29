@@ -37,11 +37,11 @@ public class ChapterOne : MonoBehaviour
     void StoryComposer()
     {
         Debug.Log("StoryComposer Ran");
-        Write("Once...", 5f);
+        Write("Once...", 0.5f);
         Write("Upon...", 0.5f);
         Write("A Time...", 0.5f);
 
-        Write("A nerd wanted to make █a game");
+        Write("A nerd wanted⌐⌐⌐⌐⌐⌐⌐needed to make █a game");
         Write("A great game█ that people would play");
         Write("and somehow KNOW that it's okay to have fun");
         Write("it's okay to get really deep into something");

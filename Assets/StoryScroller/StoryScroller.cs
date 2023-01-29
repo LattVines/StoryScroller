@@ -8,13 +8,13 @@ public class StoryScroller : MonoBehaviour
 {
 
     // █ is ascii 219, and it is a 
-    //                             h e s i t a t i o n
-    // of 1 second
+    //    h e s i t a t i o n of three cursor blinks 1.5 seconds
 
     public TMP_Text text_obj;
     public AudioClip sfx_click;
     public int typeXBottomLines = 18;
     public char hesitation_character = '█';
+    public char backspace_character = '⌐';
     float type_speed_random = 0.05f;//notice the delay with this inside LineTyper. It is slightly randomized
     AudioSource speaker;
     Queue<TypeLine> buffer = new Queue<TypeLine>();//will consume lines from buffer during typing
@@ -70,6 +70,12 @@ public class StoryScroller : MonoBehaviour
                         text_obj.text = text_obj.text.Replace("|", "");
                         yield return new WaitForSeconds(0.5f);
                         typeThis = typeThis.Substring(1);// this skips forward and skips the hesitation_character
+                    }
+                    //will remove a character to simulate a backspace
+                    else if (character == backspace_character.ToString())
+                    {
+                        text_obj.text = text_obj.text.Substring(0, text_obj.text.Length - 1);
+                        typeThis = typeThis.Substring(1);// this skips forward and skips the backspace character
                     }
                     else
                     {
