@@ -28,7 +28,7 @@ public class ChapterOne : MonoBehaviour
 
     void ClearScreen()
     {
-        scroll.ClearScreen();
+        scroll.Write("µ");
     }
 
     //will write the content into the buffer for the StoryScroller
