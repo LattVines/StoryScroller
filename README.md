@@ -6,6 +6,7 @@ Some Unity c# code for exposition story text.
 ## What is this?
 * simulate the experience of watching somebody type into a command prompt
 * use secret █ character to insert brief hesitations
+* use secret ⌐ character to backspace and remove a typed character
 * the | cursor will blink at the end
 * newlines will push all lines up, scrolling them away at X value
 * supports adding a sound effect for typing sound effects
