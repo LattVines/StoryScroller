@@ -8,6 +8,7 @@ Some Unity c# code for exposition story text.
 * use secret █ character to insert brief hesitations
 * the | cursor will blink at the end
 * newlines will push all lines up, scrolling them away at X value
+* supports adding a sound effect for typing sound effects
 
 ### Why?
 This was made to support a story in a game that is delivered through sequences of watching
